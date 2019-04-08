@@ -1,0 +1,386 @@
+#include<iostream>
+#include<string>
+#include<stdlib.h>
+#include<fstream>
+using namespace std;
+class scholar{
+	public:
+		void admission(){
+			 ofstream in;
+			 in.open("trail12.txt",ios::app);
+			 	float a,s,d,f,g,h,j,k,l;
+			 	int y,c;
+			 	string z,x,v,b;
+			cout<<"Enter the first name of the student"<<endl;
+			cin>>z;
+			in<<z<<' ';
+			fflush(stdin);
+			cout<<"Enter the last name of the student"<<endl;
+			cin>>x;
+			in<<x<<' ';
+			cout<<"Enter the date of birth of the student"<<endl;
+			cin>>a;
+			in<<a<<' ';
+			fflush(stdin);
+			cout<<"Enter the 12th board result of the student"<<endl;
+			cin>>s;
+			in<<s<<' ';
+				cout<<"Enter the JEE Mark of the student"<<endl;
+			cin>>d;
+			in<<d<<' ';
+			fflush(stdin);
+			cout<<"Enter the LPU NEST Result of the student"<<endl;
+			cin>>f;
+			in<<f<<' ';
+			cout<<"press 1 for BTech"<<endl;
+			cout<<"press 2 for BBA"<<endl;
+			cout<<"press 3 for BSC"<<endl;
+			cout<<"press 4 for BioTech"<<endl;
+			cin>>c;
+			if(c==1)
+			in<<"Btech"<<' ';
+			else if(c==2)
+			in<<"BBA"<<' ';
+				else if(c==3)
+			in<<"BSC"<<' ';
+				else if(c==4)
+			in<<"BioTech"<<' ';
+			fflush(stdin);
+			if(c==1){
+			
+			cout<<"Enter the stream you want to take admission in(cse/ece/eee/mec/ce)"<<endl;
+			cin>>v;
+			in<<v<<' ';
+		
+			cout<<"Press the number on the basis of which you want to take admission"<<endl;
+			cout<<"1.LPU NEST          2.JEE MAINS         3.12TH BOARD RESULT"<<endl;
+			cin>>y;
+			switch(y){
+				case 1:
+					if(f>90)
+					g=90;
+					else if(f>80&&f<90)
+					g=70;
+					else if(f>70&&f<80)
+					g=50;
+					else if(f>60&&f<70)
+					g=40;
+					else if(f>50&&f<60)
+					g=20;
+					else
+					g=0;
+					break;
+					case 2:
+						if(d>250)
+					g=90;
+					else if(d>200&&d<250)
+					g=70;
+					else if(d>150&&d<200)
+					g=50;
+					else if(d>100&&d<150)
+					g=40;
+					else if(d>50&&d<100)
+					g=20;
+					else
+					g=0;
+					break;
+					case 3:
+							if(s>90)
+					g=90;
+					else if(s>80&&s<90)
+					g=70;
+					else if(s>70&&s<80)
+					g=50;
+					else if(s>60&&s<70)
+					g=40;
+					else if(s>50&&s<60)
+					g=20;
+					else
+					g=0;
+					break;
+				
+					
+			}
+			h=(g*89900)/100;
+			cout<<"----------------------------------------------------------"<<endl;
+			cout<<"the tution fee after applying the schlorship is "<<89900-h<<endl;
+			in<<(89900-h)<<' ';
+			cout<<"the scholarship given is "<<h<<endl;
+			in<<h<<' ';
+		}
+		if(c==2){
+			
+			cout<<"Enter the stream you want to take admission in(fin/market/management/eco)"<<endl;
+			cin>>v;
+			in<<v<<' ';
+		
+			cout<<"Press the number on the basis of which you want to take admission"<<endl;
+			cout<<"1.LPU NEST          2.JEE MAINS         3.12TH BOARD RESULT"<<endl;
+			cin>>y;
+			switch(y){
+				case 1:
+					if(f>90)
+					g=90;
+					else if(f>80&&f<90)
+					g=70;
+					else if(f>70&&f<80)
+					g=50;
+					else if(f>60&&f<70)
+					g=40;
+					else if(f>50&&f<60)
+					g=20;
+					else
+					g=0;
+					break;
+					case 2:
+						if(d>250)
+					g=90;
+					else if(d>200&&d<250)
+					g=70;
+					else if(d>150&&d<200)
+					g=50;
+					else if(d>100&&d<150)
+					g=40;
+					else if(d>50&&d<100)
+					g=20;
+					else
+					g=0;
+					break;
+					case 3:
+							if(s>90)
+					g=90;
+					else if(s>80&&s<90)
+					g=70;
+					else if(s>70&&s<80)
+					g=50;
+					else if(s>60&&s<70)
+					g=40;
+					else if(s>50&&s<60)
+					g=20;
+					else
+					g=0;
+					break;
+					
+					
+			}
+			h=(g*100000)/100;
+			cout<<"the tution fee after applying the schlorship is "<<100000-h;
+			in<<(100000-h)<<' ';
+			cout<<"the scholarship given is "<<h;
+			in<<h<<' ';
+		}if(c==3){
+			
+			cout<<"Enter the stream you want to take admission in(mth/che/phy/eng/bio)"<<endl;
+			cin>>v;
+			in<<v<<' ';
+		
+			cout<<"Press the number on the basis of which you want to take admission"<<endl;
+			cout<<"1.LPU NEST          2.JEE MAINS         3.12TH BOARD RESULT"<<endl;
+			cin>>y;
+			switch(y){
+				case 1:
+					if(f>90)
+					g=90;
+					else if(f>80&&f<90)
+					g=70;
+					else if(f>70&&f<80)
+					g=50;
+					else if(f>60&&f<70)
+					g=40;
+					else if(f>50&&f<60)
+					g=20;
+					else
+					g=0;
+					break;
+					case 2:
+						if(d>250)
+					g=90;
+					else if(d>200&&d<250)
+					g=70;
+					else if(d>150&&d<200)
+					g=50;
+					else if(d>100&&d<150)
+					g=40;
+					else if(d>50&&d<100)
+					g=20;
+					else
+					g=0;
+					break;
+					case 3:
+							if(s>90)
+					g=90;
+					else if(s>80&&s<90)
+					g=70;
+					else if(s>70&&s<80)
+					g=50;
+					else if(s>60&&s<70)
+					g=40;
+					else if(s>50&&s<60)
+					g=20;
+					else
+					g=0;
+					break;
+					
+					
+			}
+			h=(g*50000)/100;
+			cout<<"the tution fee after applying the schlorship is "<<50000-h;
+			in<<(50000-h)<<' ';
+			cout<<"the scholarship given is "<<h;
+			in<<h<<' ';
+		}
+		if(c==4){
+			
+			cout<<"Enter the stream you want to take admission in(biophy/bioche/biomth/biomed)"<<endl;
+			cin>>v;
+			in<<v<<' ';
+		
+			cout<<"Press the number on the basis of which you want to take admission"<<endl;
+			cout<<"1.LPU NEST          2.JEE MAINS         3.12TH BOARD RESULT"<<endl;
+			cin>>y;
+			switch(y){
+				case 1:
+					if(f>90)
+					g=90;
+					else if(f>80&&f<90)
+					g=70;
+					else if(f>70&&f<80)
+					g=50;
+					else if(f>60&&f<70)
+					g=40;
+					else if(f>50&&f<60)
+					g=20;
+					else
+					g=0;
+					break;
+					case 2:
+						if(d>250)
+					g=90;
+					else if(d>200&&d<250)
+					g=70;
+					else if(d>150&&d<200)
+					g=50;
+					else if(d>100&&d<150)
+					g=40;
+					else if(d>50&&d<100)
+					g=20;
+					else
+					g=0;
+					break;
+					case 3:
+							if(s>90)
+					g=90;
+					else if(s>80&&s<90)
+					g=70;
+					else if(s>70&&s<80)
+					g=50;
+					else if(s>60&&s<70)
+					g=40;
+					else if(s>50&&s<60)
+					g=20;
+					else
+					g=0;
+					break;
+				
+					
+			}
+			h=(g*40000)/100;
+			cout<<"the tution fee after applying the schlorship is "<<40000-h;
+			in<<(40000-h)<<' ';
+			cout<<"the scholarship given is "<<h;
+			in<<h<<' ';
+		}
+			
+		}
+		void fee(){
+			int a,b,c,d;
+			cout<<"choose the branch you want to see fee structure"<<endl;
+			cout<<"1.B.Tech     2.BBA     3.BSC     4.BioTech"<<endl;
+			cin>>a;
+			switch(a){
+				case 1:
+					cout<<"The semester fee for BTech is 89900"<<endl;
+					cout<<"And scholarship will be given according to the result of the  candidate"<<endl;
+					break;
+					case 2:
+						cout<<"The semester fee for BBA is 100000"<<endl;
+						cout<<"And scholarship will be given according to the result of the candidate"<<endl;
+						break;
+						case 3:
+							cout<<"The semester fee for BSC is 50000"<<endl;
+						cout<<"And scholarship will be given according to the result of the candidate"<<endl;
+						break;
+						case 4:
+							cout<<"The semester fee for BioTech is 40000"<<endl;
+						cout<<"And scholarship will be given according to the result of the candidate"<<endl;
+						break;
+						default:
+							cout<<"wrong choice"<<endl;
+			}}
+			void display(){
+					ifstream n;
+	n.open("trail12.txt",ios::app);
+	float c,d,e,f,i,j;
+	string a,b,g,h;
+	
+	while(n>>a>>b>>c>>d>>e>>f>>g>>h>>i>>j){
+		
+			cout<<" The name of the student is  "<<ends<<a+' '+b<<endl;
+			cout<<"Enter the date of birth of the student    "<<c<<endl;
+		cout<<"Enter the 12th board result of the student  "<<d<<endl;
+		cout<<"Enter the JEE Mark of the student    "<<e<<endl;
+		cout<<"Enter the LPU NEST Result of the student   "<<f<<endl;
+	    cout<<"Enter the course you want to take admission    "<<g<<endl;
+		cout<<"Enter the stream you want to take admission in    "<<h<<endl;
+		cout<<"the semister fee of the student is "<<i<<endl;
+			cout<<"the scholarship given to the student is "<<j<<endl;
+		
+	}
+			}
+			
+		
+	
+	
+	
+};
+class child:public scholar{
+	
+};
+
+
+main(){
+	child s;
+	int a;
+	cout<<"***************************************************"<<endl;
+	cout<<"*        SCHOLARSHIP MANAGEMENT SYSTEM            *"<<endl;
+	cout<<"*                                                 *"<<endl;
+	cout<<"***************************************************"<<endl;
+	cout<<endl;
+	cout<<"contact Saideep for any details:"<<endl;
+	b:
+	cout<<"Press 1 to make new admission"<<endl;
+	cout<<"Press 2 to see fee structure"<<endl;
+	cout<<"Press 3 to see the detail of the student with scholarship"<<endl;
+	cin>>a;
+	switch(a){
+		case 1:
+			s.admission();
+			goto b;
+			break;
+			case 2:
+				s.fee();
+				goto b;
+				break;
+				case 3:
+					s.display();
+					break;
+				default:
+					exit(1);
+	}
+}
+
+
+
+
+
+
